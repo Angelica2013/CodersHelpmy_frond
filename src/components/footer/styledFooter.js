@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   background-color: #587e94; 
-  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 250px;
 `;
 
 export const SocialIcons = styled.div`
@@ -13,8 +13,9 @@ export const SocialIcons = styled.div`
   align-items: center;
   justify-content: center;
   gap: 15px;
+  padding-left: 25px;
 
-  a {
+  img {
     color: #fff;
     font-size: 24px;
     transition: color 0.3s ease;
@@ -27,12 +28,16 @@ export const SocialIcons = styled.div`
 
 export const CopyrightText = styled.p`
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
+  margin-top: auto;
+
 `;
 
 export const LogoContainer = styled.div`
   img {
-    height: 60px;  
+    height: 80px;
+    margin-right: 40px;
+    margin-top: auto;
   }
 `;

@@ -1,6 +1,6 @@
 import { Container, FormWrapper, Title, Input, Button, LinkStyled } from "./StyledRegister.js";
 import { useState } from 'react';
-import { registerUser } from "../../services/useApi.jsx";
+import { registerUser } from "../../services/service.jsx";
 
 
 const RegisterForm = () => {

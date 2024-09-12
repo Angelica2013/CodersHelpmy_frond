@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import backgroundImage from '../../assets/img/devJuntos.jpg'
+
 
 
 export const Container = styled.div`
@@ -8,7 +8,6 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url(${backgroundImage});
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -26,7 +25,7 @@ export const FormWrapper = styled.form`
 
 export const Title = styled.h2`
   font-size: 24px;
-  color: #007A8C;
+  color: black;
   margin-bottom: 20px;
   text-align: center;
 `;
@@ -44,7 +43,7 @@ export const Input = styled.input`
 export const Button = styled.button`
   width: 100%;
   padding: 12px;
-  background-color: #007A8C;
+  background-color: #1A73E8;
   color: white;
   border: none;
   border-radius: 30px;
