@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  background-color: #587e94;  /* Color de fondo del footer */
-  padding: 20px 0;
+  background-color: #587e94; 
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,12 +27,12 @@ export const SocialIcons = styled.div`
 
 export const CopyrightText = styled.p`
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   text-align: center;
 `;
 
 export const LogoContainer = styled.div`
   img {
-    height: 50px;  /* Ajustar tamaño del logo */
+    height: 60px;  
   }
 `;
