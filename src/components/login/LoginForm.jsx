@@ -1,18 +1,20 @@
 import React from 'react';
 import { Container, FormWrapper, Title, Input, Button, LinkStyled } from "../register/StyledRegister";
 import { useState } from 'react';
-import { loginUser } from '../../services/useApi';
+import { loginUser } from '../../services/service';
+import { useNavigate } from 'react-router-dom';
+
 
 const LoginForm = () => {
 const [username, setUsername] = useState(""); 
 const [password, setPassword] = useState("");
-
+const navigate = useNavigate()
 const handleSubmit = async (e) => {
     e.preventDefault();
     try {
         const token = await loginUser(username, password);  // Llamamos a la función login
-        localStorage.setItem('token', token);  // Guardamos el token en localStorage
         alert('Login exitoso');
+        navigate('/groups')
     } catch (error) {
         alert('Error al iniciar sesión');
     }

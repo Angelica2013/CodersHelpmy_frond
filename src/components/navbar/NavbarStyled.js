@@ -1,16 +1,17 @@
 import styled from "styled-components";
-import Juntos  from "../../assets/img/devJuntos.jpg";
+import Juntos  from "../../assets/img/backgroundApp.webp";
 import { Link } from "react-router-dom";
+
 
 export const Nav = styled.nav`
 display: flex;
 justify-content: space-between;
 padding: 20px 50px;
 background-image: url(${Juntos});
-background-size: cover;
+background-color: rgba(0,0,0, 1);
 background-position: center;
-height: 600px; 
-position: relative;
+background-size: cover;
+height: 100vh;
 z-index: 1;
 @media (max-width: 768px) {
     width: 100vh;
@@ -20,6 +21,7 @@ z-index: 1;
 export const Logo = styled.div`
 img {
     height: 80px;
+    z-index: 4;
 }
 `;
 
@@ -54,7 +56,7 @@ export const LoginButton = styled(Link)`
 padding: 0.75rem 1.5rem;
 font-size: 1rem;
 color: #fff;
-background-color: #007BFF;
+background-color: #1A73E8;
 border: none;
 border-radius: 20px;
 cursor: pointer;
@@ -70,23 +72,19 @@ margin-left: 20px;
 
 
 export const Title = styled.h1`
-font-size: 48px;  
-text-align: center;
-color: white; 
-margin-bottom: 0;
-position: absolute; 
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%); 
+font-size: 35px;
+color: #fff;
+margin: 0; 
 z-index: 2;
+white-space: nowrap;
+
 `;
 
 export const ContentWrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-height: 100%; 
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 z-index: 2;
 text-align: center;
 `;

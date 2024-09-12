@@ -19,7 +19,7 @@ const NavBar = () => {
         </li>
         </NavLinks>
         <ContentWrapper>
-        <Title>How we help you in your process</Title>
+        <Title>"No one understands your challenges as a developer better<br></br>than another developer.  Join our community and find the support you need."</Title>
         </ContentWrapper>
     </Nav>
     );
